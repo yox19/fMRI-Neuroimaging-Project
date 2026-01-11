@@ -1,20 +1,55 @@
-# Functional connectivity changes in stroke patients Before and After Rehabilitation: A Pilot Nilearn-Based fMRI Analysis
+# Functional connectivity changes Following Post-Stroke Rehabilitation
 
-# 1. Executive summary
-Stroke rehabilitation induces neuroplastic changes within the motor network. In this pilot study, I used
-publicly available resting-state fMRI datasets (n=5) to compare pre- and post-rehabilitation functional
-connectivity patterns using Python and Nilearn. Connectivity matrices were computed using the HarvardOxford atlas, focusing on motor-related regions. By comparing connectivity matrices before and after
-treatment, I identified mild increases in motor network integration, suggesting neural plasticity underlying
-recovery.
-# 2. Methods
-2.1 Participants
-- OpenNeuro dataset ID ds003999, the first 5 patients who underwent pre- and post-rehabilitation
-interventions.
-- Preprocessed resting-state fMRI scans, with motion correction and spatial normalization already applied.
-2.2 Analysis Pipeline
-1. Data Processing: I leveraged established neuroimaging tools (Nilearn) and adapted existing analysis
-pipelines to address my research question about rehabilitation effects on brain connectivity.
-2. Connectivity Analysis: Computed functional connectivity matrices
-3. Statistical Testing: Compared pre- vs post-rehabilitation connectivity
-4. Visualization: Created brain maps and network matrices heatmaps
-5. Tools: Python, Google Colab, Nilearn 0.10+, Harvard-Oxford atlas
+# Overview
+This project explores resting-state functional connectivity changes before and after stroke rehabilitation using an atlas-based ROI approach. The analysis focuses on motor-related cortical regions to assess network-level changes associated with recovery.
+
+The project is intended as a methodological demonstration and exploratory analysis, not a definitive clinical inference. 
+# Dataset
+-Source: OpenNeuro (ds003999)
+-Subjects: 5
+-Sessions: Pre-rehabilitation and Post-rehabilitation
+-Modality: Resting-state fMRI
+# Methods
+Preprocessing: Preprocessed resting-state fMRI scans, with motion correction and spatial normalization already applied.
+ROI Definition: 
+Atlas: Harvard–Oxford Cortical Atlas (2mm)
+Motor ROIs selected based on anatomical labels:
+-Precentral gyrus
+-Postcentral gyrus
+-Supplementary Motor Area
+Connectivity Analysis:
+-Time series extraction: NiftiLabelsMasker
+-Standardization: z-score (sample-wise)
+-Connectivity metric: Pearson correlation
+-Connectivity matrices computed per subject
+-Mean connectivity computed separately for pre and post sessions
+# Visualizations
+-Connectivity matrices
+-Glass brain projection of connectivity change
+-Network-level motor connectivity visualization
+# Results (Exploratory)
+-Mean motor network connectivity increased post-rehabilitation
+-Average within-motor connectivity change: ~0.09 (correlation units)
+
+These findings are descriptive and intended to illustrate connectivity analysis workflows rather than establish statistical significance.
+# Limitations
+- Small sample size (n=5) limits statistical power
+- No specific rehabilitation protocol examined
+- Study characteristics could affect statistical output
+- Length of rehabilitation not clearly stated
+# Future Directions
+-Subject-level statistical testing
+-Inclusion of motion and physiological confounds
+-Larger participant cohort to validate findings
+-Longitudinal tracking to assess persistence of changes
+-Correlation with clinical outcome measures and Comparison across different rehabilitation approaches
+# Technologies
+-Python
+-Nilearn
+-NumPy
+-Matplotlib
+-Google Colab
+-DataLad
+# Author
+Dr. Yonatan Yotora
+General Practitioner | Neuroscience Research Aspirant
