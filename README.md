@@ -4,7 +4,7 @@
 This project explores resting-state functional connectivity changes before and after stroke rehabilitation using an atlas-based ROI approach. The analysis focuses on motor-related cortical regions to assess network-level changes associated with recovery.
 
 The project is intended as a methodological demonstration and exploratory analysis, not a definitive clinical inference. 
-# Datasets
+# 📊Datasets
 ✅Source: OpenNeuro (ds003999)
 
 ✅Subjects: 5
@@ -13,7 +13,7 @@ The project is intended as a methodological demonstration and exploratory analys
 
 ✅Modality: Resting-state fMRI
 
-# Methods
+# 🔬Methods
 ## Preprocessing ## 
 Preprocessed resting-state fMRI scans, with motion correction and spatial normalization already applied.
 
@@ -41,7 +41,7 @@ Atlas: Harvard–Oxford Cortical Atlas (2mm)
 
 ✅Mean connectivity computed separately for pre and post sessions
 
-# Visualizations
+## Visualizations ##
 
 ✅Connectivity matrices
 
@@ -49,7 +49,7 @@ Atlas: Harvard–Oxford Cortical Atlas (2mm)
 
 ✅Network-level motor connectivity visualization
 
-# Results (Exploratory)
+# 📈Results (Exploratory)
 
 ✅Mean motor network connectivity increased post-rehabilitation
 
