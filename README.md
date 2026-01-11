@@ -1,5 +1,5 @@
-# Functional connectivity changes in stroke patients Before and After Rehabilitation: A Pilot
-Nilearn-Based fMRI Analysis
+# Functional connectivity changes in stroke patients Before and After Rehabilitation: A Pilot Nilearn-Based fMRI Analysis
+
 # 1. Executive summary
 Stroke rehabilitation induces neuroplastic changes within the motor network. In this pilot study, I used
 publicly available resting-state fMRI datasets (n=5) to compare pre- and post-rehabilitation functional
