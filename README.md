@@ -55,7 +55,21 @@ Atlas: Harvard–Oxford Cortical Atlas (2mm)
 
 ✅Average within-motor connectivity change: ~0.09 (correlation units)
 
-These findings are descriptive and intended to illustrate connectivity analysis workflows rather than establish statistical significance.
+✅Network Summary: 
+
+-Average increase: 0.09
+  
+-Conections Strengthened: 4
+  
+-Maximum increase: 0.04
+    
+ ✅Top Increased:
+ 
+  Postcentral Gyrus ↔ Juxtapositional Lobule Cortex (formerly Supplementary Motor Cortex): +0.34
+  
+  Precentral Gyrus ↔ Postcentral Gyrus: +0.24
+
+In summary, while there are some observed differences in connectivity values, none of these differences reached statistical significance at the conventional p < 0.05 threshold.
 # Limitations
 
 ✅ Small sample size (n=5) limits statistical power
@@ -90,7 +104,8 @@ These findings are descriptive and intended to illustrate connectivity analysis 
 ✅Google Colab
 
 ✅DataLad
-
+# Sources
+Code adaptations from: https://nilearn.github.io/dev/auto_examples/00_tutorials/plot_3d_and_4d_niimg.htm
 # Author
 Dr. Yonatan Yotora
 
